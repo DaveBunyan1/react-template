@@ -1,0 +1,92 @@
+:root {
+        /* Color variables */
+    --main-light-50: #f1f3ff;
+    --main-light-100: #e6e9ff;
+    --main-light-200: #cfd4ff;
+    --main-light-300: #a9b1ff;
+    --main-light-400: #797fff;
+    --main-light-500: #4442ff;
+    --main-light-600: #2b1cff;
+    --main-light-700: #1b0bf6;
+    --main-light-800: #1508ca;
+    --main-light-900: #12069b;
+    --main-light-950: #060273;
+    
+    --main-dark-50: #f9f6fe;
+    --main-dark-100: #f2ebfc;
+    --main-dark-200: #e7dbf9;
+    --main-dark-300: #d4bef4;
+    --main-dark-400: #ba94ec;
+    --main-dark-500: #9f6be1;
+    --main-dark-600: #894cd1;
+    --main-dark-700: #7c3ec2;
+    --main-dark-800: #633495;
+    --main-dark-900: #512b78;
+    --main-dark-950: #351457;
+
+    --main-greyscale-50: #f9f9f9;
+    --main-greyscale-100: #f0f0f0;
+    --main-greyscale-200: #e0e0e0;
+    --main-greyscale-300: #c0c0c0;
+    --main-greyscale-400: #a0a0a0;
+    --main-greyscale-500: #808080;
+    --main-greyscale-600: #606060;
+    --main-greyscale-700: #404040;
+    --main-greyscale-800: #202020;
+    --main-greyscale-900: #101010;
+
+    --main-danger-50: #fef2f2;
+    --main-danger-100: #fee6e5;
+    --main-danger-200: #fccfcf;
+    --main-danger-300: #f9a8a8;
+    --main-danger-400: #f57779;
+    --main-danger-500: #ec474f;
+    --main-danger-600: #dc3545;
+    --main-danger-700: #b7192c;
+    --main-danger-800: #99182c;
+    --main-danger-900: #83182c;
+    --main-danger-950: #490812;
+
+    --light: white;
+    --dark: black;
+
+    --background-color: var(--main-greyscale-100);
+
+    /* Button variables */
+    --button-primary: var(--main-light-800);
+    --button-primary-text: var(--light);
+    --button-primary-hover: var(--main-light-900);
+
+    --button-ghost-primary: var(--main-light-800);
+    
+    --button-secondary: var(--main-greyscale-900);
+    --button-secondary-text: var(--light);
+    --button-secondary-hover: #565656;
+
+    --button-ghost-secondary: var(--main-greyscale-900);
+
+    --button-danger: var(--main-danger-600);
+    --button-danger-text: var(--light);
+    --button-danger-hover: var(--main-danger-700);
+}
+
+html[data-theme='dark'] {
+    --background-color: var(--main-greyscale-800);
+
+    /* Button variables */
+    --button-primary: var(--main-dark-700);
+    --button-primary-hover: var(--main-dark-800);
+    --button-primary-text: var(--light);
+
+    --button-ghost-primary: var(--main-dark-700);
+    
+    --button-secondary: var(--light);
+    --button-secondary-text: var(--main-greyscale-900);
+    --button-secondary-hover: var(--main-greyscale-200);
+
+    --button-ghost-secondary: var(--light);
+
+    --button-danger: var(--main-danger-600);
+    --button-danger-text: var(--light);
+    --button-danger-hover: var(--main-danger-700);
+}
