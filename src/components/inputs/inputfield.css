@@ -1,0 +1,9 @@
+@import "../../styles/variables.css";
+
+.input-field {
+  padding: 6px 8px 6px 4px;
+  border: 1px solid var(--input-border);
+  background-color: var(--input-background);
+  color: var(--input-text);
+  border-radius: 5px;
+}

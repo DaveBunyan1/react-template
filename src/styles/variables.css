@@ -79,6 +79,11 @@
   --dropdown-option-background: var(--main-greyscale-100);
   --dropdown-option-text: var(--main-greyscale-900);
   --dropdown-option-border: var(--main-greyscale-600);
+
+  /* Input variables */
+  --input-background: var(--main-greyscale-100);
+  --input-border: var(--main-greyscale-600);
+  --input-text: var(--main-greyscale-900);
 }
 
 html[data-theme="dark"] {
@@ -112,4 +117,9 @@ html[data-theme="dark"] {
   --dropdown-option-background: var(--main-greyscale-800);
   --dropdown-option-text: var(--main-greyscale-100);
   --dropdown-option-border: var(--main-greyscale-200);
+
+  /* Input variables */
+  --input-background: var(--main-greyscale-800);
+  --input-border: var(--main-greyscale-200);
+  --input-text: var(--main-greyscale-100);
 }

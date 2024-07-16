@@ -2,10 +2,12 @@ import { useState } from "react";
 import "./App.css";
 import Button from "./components/buttons/Button";
 import Dropdown from "./components/inputs/Dropdown";
+import InputField from "./components/inputs/InputField";
 
 function App() {
   const [theme, setTheme] = useState("light");
   const [selectedOption, setSelectedOption] = useState("1");
+  const [inputValue, setInputValue] = useState("");
 
   const handleDropdownChange = (
     event: React.ChangeEvent<HTMLSelectElement>
@@ -24,6 +26,11 @@ function App() {
     setTheme(newTheme);
     document.documentElement.setAttribute("data-theme", newTheme);
   };
+
+  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setInputValue(event.target.value);
+  };
+
   return (
     <>
       <Button class="primary" text="Toggle Theme" onClick={toggleTheme} />
@@ -67,6 +74,8 @@ function App() {
         value={selectedOption}
         onChange={handleDropdownChange}
       />
+      <h3>Input Field</h3>
+      <InputField value={inputValue} onChange={handleInputChange} />
     </>
   );
 }
