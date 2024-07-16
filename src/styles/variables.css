@@ -61,9 +61,11 @@
 
   --button-secondary: var(--main-greyscale-900);
   --button-secondary-text: var(--light);
-  --button-secondary-hover: #565656;
+  --button-secondary-hover: var(--main-greyscale-600);
 
   --button-ghost-secondary: var(--main-greyscale-900);
+  --button-ghost-secondary-hover: var(--main-greyscale-900);
+  --button-ghost-secondary-text: var(--main-greyscale-200);
 
   --button-danger: var(--main-danger-600);
   --button-danger-text: var(--light);
@@ -85,6 +87,8 @@ html[data-theme="dark"] {
   --button-secondary-hover: var(--main-greyscale-200);
 
   --button-ghost-secondary: var(--light);
+  --button-ghost-secondary-hover: var(--light);
+  --button-ghost-secondary-text: var(--main-greyscale-900);
 
   --button-danger: var(--main-danger-600);
   --button-danger-text: var(--light);

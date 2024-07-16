@@ -1,0 +1,69 @@
+@import "../../styles/variables.css";
+
+.button {
+  border: none;
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.button-primary {
+  background-color: var(--button-primary);
+  color: white;
+}
+
+.button-primary:hover {
+  background-color: var(--button-primary-hover);
+}
+
+.button-secondary {
+  background-color: var(--button-secondary);
+  color: var(--button-secondary-text);
+}
+
+.button-secondary:hover {
+  background-color: var(--button-secondary-hover);
+}
+
+.button-danger {
+  background-color: var(--button-danger);
+  color: var(--button-danger-text);
+}
+
+.button-danger:hover {
+  background-color: var(--button-danger-hover);
+}
+
+.button-ghost-primary {
+  background-color: transparent;
+  color: var(--button-ghost-primary);
+  border: 1px solid var(--button-ghost-primary);
+}
+
+.button-ghost-primary:hover {
+  background-color: var(--button-ghost-primary);
+  color: var(--light);
+}
+
+.button-ghost-secondary {
+  background-color: transparent;
+  color: var(--button-ghost-secondary);
+  border: 1px solid var(--button-ghost-secondary);
+}
+
+.button-ghost-secondary:hover {
+  background-color: var(--button-ghost-secondary-hover);
+  color: var(--button-ghost-secondary-text);
+}
+
+.button-ghost-danger {
+  background-color: transparent;
+  color: var(--button-danger);
+  border: 1px solid var(--button-danger);
+}
+
+.button-ghost-danger:hover {
+  background-color: var(--button-danger);
+  color: var(--button-danger-text);
+}
