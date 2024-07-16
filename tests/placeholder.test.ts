@@ -1,1 +1,5 @@
-// placeholder.test.ts\ntest('placeholder test', () => { expect(true).toBe(true); });
+import { it, expect } from "vitest";
+
+it("Should pass", () => {
+  expect(true).toBe(true);
+});
