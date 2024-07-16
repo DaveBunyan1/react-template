@@ -1,0 +1,16 @@
+@import "../../styles/variables.css";
+
+.dropdown-select {
+  background-color: var(--dropdown-background);
+  color: var(--dropdown-text);
+  border: 1px solid var(--dropdown-border);
+  padding: 6px 8px 6px 4px;
+  width: 150px;
+}
+
+.dropdown-option {
+  background-color: var(--dropdown-option-background);
+  color: var(--dropdown-option-text);
+  border: 1px solid var(--dropdown-option-border);
+  z-index: 1;
+}

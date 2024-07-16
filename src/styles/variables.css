@@ -51,6 +51,7 @@
   --dark: black;
 
   --background-color: var(--main-greyscale-100);
+  --font-color: var(--main-greyscale-900);
 
   /* Button variables */
   --button-primary: var(--main-light-800);
@@ -70,10 +71,19 @@
   --button-danger: var(--main-danger-600);
   --button-danger-text: var(--light);
   --button-danger-hover: var(--main-danger-700);
+
+  /* Dropdown variables */
+  --dropdown-background: var(--main-greyscale-100);
+  --dropdown-border: var(--main-greyscale-600);
+  --dropdown-text: var(--main-greyscale-900);
+  --dropdown-option-background: var(--main-greyscale-100);
+  --dropdown-option-text: var(--main-greyscale-900);
+  --dropdown-option-border: var(--main-greyscale-600);
 }
 
 html[data-theme="dark"] {
   --background-color: var(--main-greyscale-800);
+  --font-color: var(--main-greyscale-100);
 
   /* Button variables */
   --button-primary: var(--main-dark-700);
@@ -93,4 +103,13 @@ html[data-theme="dark"] {
   --button-danger: var(--main-danger-600);
   --button-danger-text: var(--light);
   --button-danger-hover: var(--main-danger-700);
+
+  /* Dropdown variables */
+  --dropdown-background: var(--main-greyscale-800);
+  --dropdown-border: var(--main-greyscale-200);
+  --dropdown-text: var(--main-greyscale-100);
+
+  --dropdown-option-background: var(--main-greyscale-800);
+  --dropdown-option-text: var(--main-greyscale-100);
+  --dropdown-option-border: var(--main-greyscale-200);
 }

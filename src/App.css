@@ -2,9 +2,11 @@
 
 body {
   background-color: var(--background-color);
+  font-family: "Helvetica", sans-serif;
+  color: var(--font-color);
 }
 
-#root {
+.buttons {
   height: 50px;
   width: 300px;
   display: flex;
