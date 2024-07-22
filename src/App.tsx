@@ -3,11 +3,53 @@ import "./App.css";
 import Button from "./components/buttons/Button";
 import Dropdown from "./components/inputs/Dropdown";
 import InputField from "./components/inputs/InputField";
+import Checklist from "./components/selections/Checklist";
+import RadioButtons from "./components/selections/RadioButtons";
 
 function App() {
   const [theme, setTheme] = useState("light");
   const [selectedOption, setSelectedOption] = useState("1");
   const [inputValue, setInputValue] = useState("");
+  const [selectedChecklistItems, setSelectedChecklistItems] = useState<
+    string[]
+  >([]);
+  const [selectedRadioItem, setSelectedRadioItem] = useState<string | null>(
+    null
+  );
+
+  const handleChecklistChange = (newSelectedItems: string[]) => {
+    setSelectedChecklistItems(newSelectedItems);
+  };
+
+  const handleRadioChange = (item: string) => {
+    setSelectedRadioItem(item);
+  };
+
+  const radioItems = [
+    "One",
+    "Two",
+    "Three",
+    "Four",
+    "Five",
+    "Six",
+    "Seven",
+    "Eight",
+    "Nine",
+    "Ten",
+  ];
+
+  const checklistItems = [
+    "Item 1",
+    "Item 2",
+    "Item 3",
+    "Item 4",
+    "Item 5",
+    "Item 6",
+    "Item 7",
+    "Item 8",
+    "Item 9",
+    "Item 10",
+  ];
 
   const handleDropdownChange = (
     event: React.ChangeEvent<HTMLSelectElement>
@@ -76,6 +118,18 @@ function App() {
       />
       <h3>Input Field</h3>
       <InputField value={inputValue} onChange={handleInputChange} />
+      <h3>Checklist</h3>
+      <Checklist
+        items={checklistItems}
+        selectedItems={selectedChecklistItems}
+        onChange={handleChecklistChange}
+      />
+      <h3>Radio Buttons</h3>
+      <RadioButtons
+        items={radioItems}
+        selectedItem={selectedRadioItem}
+        onChange={handleRadioChange}
+      />
     </>
   );
 }
