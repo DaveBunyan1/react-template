@@ -84,6 +84,24 @@
   --input-background: var(--main-greyscale-100);
   --input-border: var(--main-greyscale-600);
   --input-text: var(--main-greyscale-900);
+
+  /* Checkbox variables */
+  --checkbox-background: var(--main-greyscale-100);
+  --checkbox-border: var(--dark);
+  --checkbox-text: var(--main-greyscale-900);
+
+  --checkbox-checked-background: var(--main-light-800);
+  --checkbox-hover-background: var(--main-greyscale-300);
+  --checkbox-tick: var(--light);
+
+  /* Radio variables */
+  --radio-background: var(--main-greyscale-100);
+  --radio-border: var(--dark);
+  --radio-text: var(--main-greyscale-900);
+
+  --radio-checked-background: var(--main-light-800);
+  --radio-hover-background: var(--main-greyscale-300);
+  --radio-dot: var(--light);
 }
 
 html[data-theme="dark"] {
@@ -122,4 +140,22 @@ html[data-theme="dark"] {
   --input-background: var(--main-greyscale-800);
   --input-border: var(--main-greyscale-200);
   --input-text: var(--main-greyscale-100);
+
+  /* Checkbox variables */
+  --checkbox-background: var(--main-greyscale-800);
+  --checkbox-border: var(--light);
+  --checkbox-text: var(--main-greyscale-100);
+
+  --checkbox-checked-background: var(--main-dark-700);
+  --checkbox-hover-background: var(--main-greyscale-600);
+  --checkbox-tick: var(--light);
+
+  /* Radio variables */
+  --radio-background: var(--main-greyscale-800);
+  --radio-border: var(--light);
+  --radio-text: var(--main-greyscale-100);
+
+  --radio-checked-background: var(--main-dark-700);
+  --radio-hover-background: var(--main-greyscale-600);
+  --radio-dot: var(--light);
 }

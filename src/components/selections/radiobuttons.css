@@ -1,8 +1,10 @@
+@import "../../styles/variables.css";
+
 /* Customize the label (the container) */
 .radio-container {
   display: block;
   position: relative;
-  padding-left: 35px;
+  padding-left: 25px;
   margin-bottom: 12px;
   cursor: pointer;
   font-size: 16px;
@@ -26,21 +28,21 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: #eee;
+  height: 15px;
+  width: 15px;
+  background-color: var(--radio-background);
   border-radius: 50%;
-  border: 1px solid black;
+  border: 1px solid var(--radio-border);
 }
 
 /* On mouse-over, add a grey background color */
 .radio-container:hover input ~ .radio-checkmark {
-  background-color: #ccc;
+  background-color: var(--radio-hover-background);
 }
 
 /* When the radio button is checked, add a blue background */
 .radio-container input:checked ~ .radio-checkmark {
-  background-color: #2196f3;
+  background-color: var(--radio-checked-background);
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
@@ -57,10 +59,10 @@
 
 /* Style the indicator (dot/circle) */
 .radio-container .radio-checkmark:after {
-  top: 8px;
-  left: 8px;
-  width: 8px;
-  height: 8px;
+  top: 4px;
+  left: 4px;
+  width: 5px;
+  height: 5px;
   border-radius: 50%;
-  background: white;
+  background: var(--radio-dot);
 }

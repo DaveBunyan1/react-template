@@ -1,8 +1,10 @@
+@import "../../styles/variables.css";
+
 /* Customize the label (the container) */
 .checklist-container {
   display: block;
   position: relative;
-  padding-left: 35px;
+  padding-left: 25px;
   margin-bottom: 12px;
   cursor: pointer;
   font-size: 16px;
@@ -26,20 +28,20 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: #eee;
-  border: 1px solid black;
+  height: 15px;
+  width: 15px;
+  background-color: var(--checkbox-background);
+  border: 1px solid var(--checkbox-border);
 }
 
 /* On mouse-over, add a grey background color */
 .checklist-container:hover input ~ .checklist-checkmark {
-  background-color: #ccc;
+  background-color: var(--checkbox-hover-background);
 }
 
 /* When the checkbox is checked, add a blue background */
 .checklist-container input:checked ~ .checklist-checkmark {
-  background-color: #2196f3;
+  background-color: var(--checkbox-checked-background);
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -56,11 +58,11 @@
 
 /* Style the checkmark/indicator */
 .checklist-container .checklist-checkmark:after {
-  left: 9px;
-  top: 5px;
+  left: 4px;
+  top: 1px;
   width: 5px;
   height: 10px;
-  border: solid white;
+  border: solid var(--checkbox-tick);
   border-width: 0 3px 3px 0;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
