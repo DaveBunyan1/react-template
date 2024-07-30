@@ -102,6 +102,9 @@
   --radio-checked-background: var(--main-light-800);
   --radio-hover-background: var(--main-greyscale-300);
   --radio-dot: var(--light);
+
+  /* Theme change button variables */
+  --theme-button-icon: url("../assets/moon.svg");
 }
 
 html[data-theme="dark"] {
@@ -158,4 +161,7 @@ html[data-theme="dark"] {
   --radio-checked-background: var(--main-dark-700);
   --radio-hover-background: var(--main-greyscale-600);
   --radio-dot: var(--light);
+
+  /* Theme change button variables */
+  --theme-button-icon: url("../assets/sun.svg");
 }

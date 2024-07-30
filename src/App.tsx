@@ -5,9 +5,9 @@ import Dropdown from "./components/inputs/Dropdown";
 import InputField from "./components/inputs/InputField";
 import Checklist from "./components/selections/Checklist";
 import RadioButtons from "./components/selections/RadioButtons";
+import ThemeChangeButton from "./components/buttons/ThemeChangeButton";
 
 function App() {
-  const [theme, setTheme] = useState("light");
   const [selectedOption, setSelectedOption] = useState("1");
   const [inputValue, setInputValue] = useState("");
   const [selectedChecklistItems, setSelectedChecklistItems] = useState<
@@ -63,19 +63,13 @@ function App() {
     { value: "3", label: "Option 3" },
   ];
 
-  const toggleTheme = () => {
-    const newTheme = theme === "light" ? "dark" : "light";
-    setTheme(newTheme);
-    document.documentElement.setAttribute("data-theme", newTheme);
-  };
-
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setInputValue(event.target.value);
   };
 
   return (
     <>
-      <Button class="primary" text="Toggle Theme" onClick={toggleTheme} />
+      <ThemeChangeButton />
       <h3>Buttons</h3>
       <div className="buttons">
         <Button

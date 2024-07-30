@@ -1,0 +1,14 @@
+@import "../../styles/variables.css";
+
+.theme-change-button {
+  appearance: none;
+  height: 25px;
+  width: 25px;
+  background-color: transparent;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: var(--theme-button-icon);
+  border: none;
+  cursor: pointer;
+}
