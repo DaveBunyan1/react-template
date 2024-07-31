@@ -111,7 +111,12 @@ function App() {
         onChange={handleDropdownChange}
       />
       <h3>Input Field</h3>
-      <InputField value={inputValue} onChange={handleInputChange} />
+      <InputField
+        name="input"
+        type="text"
+        value={inputValue}
+        onChange={handleInputChange}
+      />
       <h3>Checklist</h3>
       <Checklist
         items={checklistItems}
